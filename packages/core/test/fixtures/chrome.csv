@@ -1,0 +1,5 @@
+name,url,username,password,note
+github.com,https://github.com/login,alice,gh-pass,
+mail.google.com,https://accounts.google.com/,alice@gmail.com,g-pass,
+example.org,https://example.org/,bob,ex-pass,"has, a comma"
+,https://empty.example/,,,

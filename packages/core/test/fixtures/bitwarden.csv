@@ -1,0 +1,4 @@
+folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
+Work,1,login,Slack,,,0,https://acme.slack.com,alice@acme.com,sl-pass,JBSWY3DPEHPK3PXP
+,,login,Netflix,shared account,,0,https://www.netflix.com,family@x.com,nf-pass,
+Personal,,note,Wifi password,the code is 1234,,0,,,,
