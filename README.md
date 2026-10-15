@@ -139,7 +139,8 @@ The integration suite creates three real accounts and asserts that the database:
 
 1. **Supabase:** create a project at supabase.com, then `npx supabase link --project-ref <ref>` and `npx supabase db push`. Under *Authentication → Providers → Email*, either disable "Confirm email" or keep it on (the app handles the confirmation step). Add your web URL under *URL Configuration*.
 2. **Web (Vercel):** import the repo and set the root directory to `apps/web`. `vercel.json` already contains the monorepo build command, SPA rewrites and security headers. Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`.
-3. **Extension:** put the hosted values in `apps/extension/.env.production`, then run `pnpm --filter @vault/extension zip`. Load the unpacked build or distribute the zip.
+   Or deploy from the CLI without Git: `cd apps/web && vercel link && vercel pull --environment=production && vercel build --prod && vercel deploy --prebuilt --prod`.
+3. **Extension:** put the hosted values in `apps/extension/.env.production`, then run `pnpm --filter @vault/extension zip`. This produces `apps/extension/.output/secure-vault-<version>-chrome.zip`. Load the unpacked build or distribute the zip.
 
 ---
 

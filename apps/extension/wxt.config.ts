@@ -21,6 +21,7 @@ export default defineConfig({
       },
     },
   },
+  zip: { artifactTemplate: 'secure-vault-{{version}}-{{browser}}.zip' },
   vite: () => ({
     plugins: [tailwindcss()],
     build: { chunkSizeWarningLimit: 2000 },

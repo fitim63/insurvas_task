@@ -11,3 +11,4 @@ coverage
 *.zip
 .env.production
 .env.*.local
+.vercel
